@@ -25,7 +25,7 @@ scene.setBackgroundImage(assets.image`night sky`)
 controller.moveSprite(mySprite, 100, 100)
 mySprite.setStayInScreen(true)
 info.startCountdown(30)
-info.setLife(5)
+info.setLife(4)
 info.setScore(0)
 animation.runImageAnimation(
 mySprite,
@@ -52,7 +52,7 @@ forever(function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, -90, 0)
-    projectile.y = randint(15, 115)
+    projectile.y = randint(10, 115)
     projectile.setKind(SpriteKind.Enemy)
     animation.runImageAnimation(
     projectile,
@@ -145,5 +145,5 @@ forever(function () {
     200,
     true
     )
-    pause(1500)
+    pause(1000)
 })
